@@ -1,0 +1,140 @@
+img{
+    background-color: rgb(167 253 164);
+    width: 40%;
+    border-radius: 11%;
+}
+.music{
+    display: none;
+}
+audio{
+    display: none;
+}
+/***body***/
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(./background/fHl0mA.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(111, 111, 111, 0.5);
+    padding: 3%;
+    border-radius: 3rem;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/**** end body ***/
+.img>img{
+    width: 65%;
+    height: 16rem;
+    border-radius: 2rem;
+    margin-bottom: 3%;
+}
+/***load bar***/
+.b-load-bar{
+    background-color: #665c5c;
+    height: 0.3rem;
+    position: relative;
+}
+.load-bar{
+    background-color: greenyellow;
+    width: 0%;
+    height: 0.3rem;
+    position: absolute;
+}
+.c-load{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: rgb(30, 71, 71) solid 3px;
+    background-color: black;
+    border-radius: 1rem;
+    position: relative;
+    top: -5px;
+    left: 0;
+}
+/*** end load bar***/
+/***timer***/
+.text_time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+/***end timer ***/
+/*** sound ***/
+.speaker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.speaker>button{
+    width: 23%;
+    background-color: transparent;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    width: 23%;
+}
+/**** container menu bar *****/
+.container2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(111, 111, 111, 0.5);
+    color: #fff;
+    border-radius: 10%;
+    width: 40%;
+}
+.container2>div>img{
+    margin-top: 3%;
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+    margin-bottom: 3%;
+}
+.container2>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container2>div>p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/**** menu bar ***/
+.menubar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.menubar>img{
+    width: 10%;
+}
+/*** single track in menu ***/
+.active{
+    background-color: chartreuse;
+    border-radius: 3rem;
+}
+@media screen and (max-width:800px) {
+    body{
+        flex-direction: column;
+    }
+    .container,.container2{
+        width: 90%;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./icon/icons8-musical-notes-100.png"
+      type="image/x-icon"
+    />
+    <title>Music</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="menubar" class="menubar">
+        <button onclick="open_close()">
+          <img src="./icon/icons8-menu-100.png" alt="" id="menu_img" />
+        </button>
+      </div>
+      <div id="img" class="img">
+        <img
+          src="./background/bb.png"
+          alt=""
+          id="img-main"
+          class="img-main"
+        />
+      </div>
+      <div id="audio-control" class="audio-control" preload="metadata">
+        <audio controls id="music" class="music">
+          <source
+            id="sorce"
+            src="./music/Lily - Alan Walker K-391 Emelie Hollow (128).mp3"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+      <!---end audio-->
+      <!---load bar-->
+      <div id="b-load-bar" class="b-load-bar">
+        <div id="load-bar" class="load-bar"></div>
+        <div id="c-load" class="c-load"></div>
+      </div>
+      <!---end load bar-->
+      <!--- text time-->
+      <div id="text_time" class="text_time">
+        <p id="p">0:00</p>
+        <p id="p2">0:00</p>
+      </div>
+      <!---end text time-->
+      <!--speaker-->
+      <div id="speaker" class="speaker">
+        <button onclick="volumedown()"><img src="./icon/icons8-sound-100 (1).png" alt="" /></button>
+        <input type="range" id="control-volume" />
+        <button onclick="volumeup()"><img src="./icon/icons8-sound-100.png" alt="" /></button>
+      </div>
+      <!-- end speaker-->
+      <!---button controler-->
+      <div id="button" class="button">
+        <button id="speedbtn" class="speedbtn" onclick="lowforward()">
+          <img
+            src="./icon/icons8-fast-forward-round-100.png"
+            style="rotate: 180deg"
+          />
+        </button>
+        <button id="playbtn" class="playbtn" onclick="play_paused()">
+          <img src="./icon/icons8-play-button-circled-100.png" id="btn-img" />
+        </button>
+        <button
+          id="speedbtn"
+          class="speedbtn"
+          onclick="fastforward()"
+          ondblclick="mid()"
+        >
+          <img src="./icon/icons8-fast-forward-round-100.png" />
+        </button>
+      </div>
+      <!---button controler end-->
+    </div>
+    <div id="container2" class="container2">
+      <div id="m1" class="m1">
+        <img src="./background/a1.jpg" alt="" />
+        <audio
+          src="./music/آلن واکر-sing me to sleep-musicDel-128.mp3"
+          controls
+          id="shokret"
+        ></audio>
+        <p>Sing me to sleep</p>
+        <p id="songer" class="songer">Alan Walker</p>
+        <p id="time1" class="time1">5:00</p>
+      </div>
+      <div id="m2" class="m2">
+        <img src="./background/a2.jpg" alt="" />
+        <audio
+          src="./music/Alan Walker, Torine - Hello World (2).mp3"
+          controls
+        ></audio>
+        <p>Hello world</p>
+        <p id="songer" class="songer">Alan Walker</p>
+        <p id="time2" class="time2">5:00</p>
+      </div>
+      <div id="m3" class="m3">
+        <img src="./background/a3.jpg" alt="" />
+        <audio src="./music/Alan Walker-Faded-musicDel-128.mp3" controls></audio>
+        <p>Faded</p>
+        <p id="songer" class="songer">Alan Walker</p>
+        <p id="time3" class="time3">6:00</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
