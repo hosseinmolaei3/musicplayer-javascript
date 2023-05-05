@@ -1,5 +1,9 @@
+@font-face {
+    font-family:anisa ;
+    src: url(./ToetheLineless.ttf);
+}
 img{
-    background-color: rgb(167 253 164);
+    background-color: rgb(167, 253, 164, 0.71);
     width: 40%;
     border-radius: 11%;
 }
@@ -11,6 +15,7 @@ audio{
 }
 /***body***/
 body{
+    font-family: anisa;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,6 +32,7 @@ body{
     width: 50%;
     background-color: rgba(111, 111, 111, 0.5);
     padding: 3%;
+    margin-top: 3%;
     border-radius: 3rem;
 }
 .button{
@@ -98,6 +104,7 @@ button{
     color: #fff;
     border-radius: 10%;
     width: 40%;
+    margin-top: 3%;
 }
 .container2>div>img{
     margin-top: 3%;
@@ -127,7 +134,9 @@ button{
 }
 /*** single track in menu ***/
 .active{
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
+    background-color: rgb(167, 253, 164, 0.5);
+
     border-radius: 3rem;
 }
 @media screen and (max-width:800px) {
@@ -138,3 +147,29 @@ button{
         width: 90%;
     }
 }
+/*input range for volume*/
+input[type=range] {
+    -webkit-appearance: none;
+    height: 25px;
+    background: rgb(167 253 164);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 15%;
+  }
+  
+  input[type=range]:hover {
+    opacity: 1;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
